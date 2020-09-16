@@ -35,3 +35,20 @@ const seccionesPagina = new fullpage('#fullpage', {
 		 // }
 
 });
+
+//toggle mailto
+
+const mail = document.querySelectorAll('.fa-envelope');
+const close = document.querySelector('.close');
+const contact = document.querySelector('.contact');
+
+for (let i = 0; i < mail.length; i++) {
+	mail[i].addEventListener('click', () => {
+		contact.style.display = 'initial';
+	})
+}
+close.addEventListener('click', () => {
+	
+	contact.style.display = 'none';
+	
+})
